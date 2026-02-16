@@ -105,6 +105,15 @@ uvicorn app.main:app --reload --port 8000
 ### Demo Mode
 Click **"Try Demo Mode"** on the login page – no backend or Supabase needed! All data is self-contained with realistic mock data.
 
+## 🚀 Deployment
+
+**Ready to deploy?** Check out our comprehensive [DEPLOYMENT.md](DEPLOYMENT.md) guide for:
+- **Railway** (Backend hosting) - ~$5/month
+- **Vercel** (Frontend hosting) - FREE
+- **Supabase** (Database) - FREE tier available
+
+All required API keys and step-by-step instructions are included!
+
 ## Project Structure
 ```
 ├── frontend/
