@@ -1,0 +1,90 @@
+type,date,amount,source,category,description,payment_method
+income,2026-02-01,2500,Swiggy,delivery,Weekend deliveries,upi
+income,2026-02-02,1800,Zomato,delivery,Evening delivery shift,upi
+income,2026-02-03,3200,Ola,delivery,Airport runs,upi
+income,2026-02-04,1500,Uber,delivery,Morning rides,upi
+income,2026-02-05,2200,Rapido,delivery,Bike taxi earnings,upi
+income,2026-02-06,1200,Zepto,delivery,Quick commerce deliveries,upi
+income,2026-02-07,800,Dunzo,delivery,Package deliveries,upi
+income,2026-02-08,15000,Freelance,freelance,Website design project,bank
+income,2026-02-09,2800,Swiggy,delivery,Lunch rush deliveries,upi
+income,2026-02-10,1600,Zomato,delivery,Night shift,upi
+income,2026-02-11,2100,Ola,delivery,Corporate pickups,upi
+income,2026-02-12,1900,Uber,delivery,Weekend rides,upi
+income,2026-02-13,1400,Rapido,delivery,Student runs,upi
+income,2026-02-14,950,Zepto,delivery,Valentine special deliveries,upi
+income,2026-02-15,12000,Freelance,freelance,Logo design batch,bank
+income,2026-02-16,3500,Swiggy,delivery,Festival weekend earnings,upi
+income,2026-02-17,2300,Zomato,delivery,Party orders,upi
+income,2026-02-18,2700,Ola,delivery,Mall pickups,upi
+income,2026-02-19,1800,Uber,delivery,Office commuters,upi
+income,2026-02-20,1100,Rapido,delivery,Metro station runs,upi
+income,2026-02-21,8500,YouTube,content,AdSense February payout,bank
+income,2026-02-22,2400,Swiggy,delivery,Weekday deliveries,upi
+income,2026-02-23,1950,Zomato,delivery,Lunch orders,upi
+income,2026-02-24,2600,Ola,delivery,Airport transfers,upi
+income,2026-02-25,2000,Uber,delivery,Night rides,upi
+income,2026-02-26,1300,Rapido,delivery,College area runs,upi
+income,2026-02-27,750,Dunzo,delivery,Grocery deliveries,upi
+income,2026-02-28,18000,Freelance,freelance,Mobile app UI project,bank
+income,2026-01-15,2200,Swiggy,delivery,Mid-month deliveries,upi
+income,2026-01-20,1700,Zomato,delivery,Sunday rush,upi
+income,2026-01-25,2900,Ola,delivery,Weekend rides,upi
+income,2026-01-28,10000,Freelance,freelance,Dashboard redesign,bank
+income,2026-01-30,1450,Uber,delivery,Month end rides,upi
+income,2026-01-05,2100,Rapido,delivery,New Year deliveries,upi
+income,2026-01-08,900,Zepto,delivery,Morning deliveries,upi
+income,2026-01-10,6500,YouTube,content,AdSense January,bank
+income,2026-01-12,3200,Swiggy,delivery,Pongal special,upi
+income,2026-01-18,1850,Zomato,delivery,Evening orders,upi
+income,2026-01-22,2500,Ola,delivery,Office commute,upi
+income,2026-01-26,1600,Uber,delivery,Republic Day earnings,upi
+income,2026-01-02,1100,Rapido,delivery,Holiday rides,upi
+income,2026-01-07,650,Dunzo,delivery,Medicine deliveries,upi
+income,2026-01-14,5000,Udemy,tutoring,Course sales,bank
+income,2026-01-19,2800,Swiggy,delivery,Restaurant partners,upi
+income,2026-01-24,1950,Zomato,delivery,Dinner rush,upi
+income,2026-01-29,3100,Ola,delivery,Airport runs,upi
+income,2026-01-31,1750,Uber,delivery,Month end surge,upi
+income,2026-01-04,1200,Rapido,delivery,Short trips,upi
+income,2026-01-09,800,Zepto,delivery,Express deliveries,upi
+income,2026-01-16,4200,Meesho,ecommerce,Product reselling,bank
+expense,2026-02-01,450,expense,food,Lunch at restaurant,upi
+expense,2026-02-02,200,expense,transport,Auto rickshaw,cash
+expense,2026-02-03,1500,expense,shopping,New headphones,card
+expense,2026-02-04,800,expense,bills,Electricity bill,upi
+expense,2026-02-05,350,expense,food,Groceries,upi
+expense,2026-02-06,999,expense,entertainment,Netflix subscription,card
+expense,2026-02-07,150,expense,transport,Metro recharge,upi
+expense,2026-02-08,2500,expense,bills,Mobile + Internet,upi
+expense,2026-02-09,600,expense,food,Weekend Zomato order,upi
+expense,2026-02-10,3200,expense,shopping,New shoes,card
+expense,2026-02-11,180,expense,food,Street food,cash
+expense,2026-02-12,250,expense,transport,Uber ride,upi
+expense,2026-02-13,1200,expense,entertainment,Movie + dinner date,card
+expense,2026-02-14,2000,expense,shopping,Valentine gift,card
+expense,2026-02-15,350,expense,food,Pizza order,upi
+expense,2026-02-16,500,expense,food,Family dinner,upi
+expense,2026-02-17,120,expense,transport,Bus fare,cash
+expense,2026-02-18,450,expense,entertainment,Gaming subscription,card
+expense,2026-02-19,280,expense,food,Snacks and beverages,upi
+expense,2026-02-20,1800,expense,bills,Medical checkup,card
+expense,2026-02-21,650,expense,food,Restaurant dinner,upi
+expense,2026-02-22,300,expense,transport,Petrol,upi
+expense,2026-02-23,2200,expense,shopping,Clothes shopping,card
+expense,2026-02-24,400,expense,food,Grocery shopping,upi
+expense,2026-02-25,550,expense,entertainment,OTT subscriptions,card
+expense,2026-02-26,180,expense,transport,Auto fare,cash
+expense,2026-02-27,320,expense,food,Coffee and snacks,upi
+expense,2026-02-28,1500,expense,bills,Credit card payment,bank
+expense,2026-01-15,380,expense,food,Lunch with friends,upi
+expense,2026-01-20,900,expense,shopping,Home supplies,card
+expense,2026-01-25,250,expense,transport,Ola ride,upi
+expense,2026-01-08,1200,expense,bills,Phone bill,upi
+expense,2026-01-12,450,expense,food,Dinner out,upi
+expense,2026-01-18,650,expense,entertainment,Concert tickets,card
+expense,2026-01-22,280,expense,food,Fast food,cash
+expense,2026-01-28,1800,expense,shopping,Electronics,card
+expense,2026-01-05,350,expense,food,New Year party food,upi
+expense,2026-01-10,200,expense,transport,Metro card topup,upi
+c:\Users\vigne\OneDrive\Desktop\code-4-change-vscod\backend\venv\Scripts\python.exe -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000

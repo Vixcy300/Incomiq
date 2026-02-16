@@ -1,0 +1,320 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #EFF6FF;
+  --color-primary-100: #DBEAFE;
+  --color-primary-200: #BFDBFE;
+  --color-primary-300: #93C5FD;
+  --color-primary-400: #60A5FA;
+  --color-primary-500: #3B82F6;
+  --color-primary-600: #2563EB;
+  --color-primary-700: #1D4ED8;
+  --color-primary-800: #1E40AF;
+  --color-primary-900: #1E3A8A;
+
+  --color-success-50: #ECFDF5;
+  --color-success-500: #10B981;
+  --color-success-600: #059669;
+
+  --color-warning-50: #FFFBEB;
+  --color-warning-500: #F59E0B;
+  --color-warning-600: #D97706;
+
+  --color-danger-50: #FEF2F2;
+  --color-danger-500: #EF4444;
+  --color-danger-600: #DC2626;
+
+  --color-info-500: #06B6D4;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-elevated: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  --shadow-strong: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFFFFF;
+    color: #111827;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+  /* ========== DARK MODE STYLES ========== */
+  
+  /* Base dark mode */
+  .dark body,
+  .dark {
+    background-color: #0f172a;
+    color: #F1F5F9;
+  }
+
+  /* Backgrounds */
+  .dark .bg-white {
+    background-color: #1e293b !important;
+  }
+
+  .dark .bg-gray-50 {
+    background-color: #0f172a !important;
+  }
+
+  .dark .bg-gray-100 {
+    background-color: #1e293b !important;
+  }
+  
+  .dark .bg-gray-200 {
+    background-color: #334155 !important;
+  }
+
+  /* Text colors */
+  .dark .text-gray-900 {
+    color: #F1F5F9 !important;
+  }
+
+  .dark .text-gray-800 {
+    color: #E2E8F0 !important;
+  }
+
+  .dark .text-gray-700 {
+    color: #CBD5E1 !important;
+  }
+
+  .dark .text-gray-600 {
+    color: #94A3B8 !important;
+  }
+
+  .dark .text-gray-500 {
+    color: #64748B !important;
+  }
+
+  .dark .text-gray-400 {
+    color: #64748B !important;
+  }
+
+  /* Borders */
+  .dark .border-gray-200 {
+    border-color: #334155 !important;
+  }
+
+  .dark .border-gray-100 {
+    border-color: #1e293b !important;
+  }
+  
+  .dark .border-gray-300 {
+    border-color: #475569 !important;
+  }
+
+  /* Cards and panels */
+  .dark .shadow-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  /* Inputs */
+  .dark input,
+  .dark textarea,
+  .dark select {
+    background-color: #1e293b !important;
+    border-color: #475569 !important;
+    color: #F1F5F9 !important;
+  }
+
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    color: #64748B !important;
+  }
+
+  .dark input:focus,
+  .dark textarea:focus,
+  .dark select:focus {
+    border-color: #3B82F6 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3) !important;
+  }
+
+  /* Buttons - outline variant */
+  .dark .border-gray-200.hover\:border-gray-300 {
+    border-color: #475569 !important;
+  }
+
+  /* Gradient backgrounds for dark mode */
+  .dark .bg-gradient-to-br.from-blue-50,
+  .dark .bg-gradient-to-br.from-emerald-50,
+  .dark .bg-gradient-to-br.from-amber-50,
+  .dark .bg-gradient-to-br.from-purple-50,
+  .dark .bg-gradient-to-br.from-rose-50 {
+    background: linear-gradient(to bottom right, #1e293b, #0f172a) !important;
+  }
+
+  .dark .from-blue-50 { background-color: #1e3a5f !important; }
+  .dark .from-emerald-50 { background-color: #134e4a !important; }
+  .dark .from-amber-50 { background-color: #451a03 !important; }
+  .dark .from-rose-50 { background-color: #4c0519 !important; }
+  .dark .from-purple-50 { background-color: #3b0764 !important; }
+
+  .dark .bg-blue-50 { background-color: #1e3a5f !important; }
+  .dark .bg-emerald-50 { background-color: #134e4a !important; }
+  .dark .bg-amber-50 { background-color: #451a03 !important; }
+  .dark .bg-rose-50 { background-color: #4c0519 !important; }
+  .dark .bg-purple-50 { background-color: #3b0764 !important; }
+  .dark .bg-red-50 { background-color: #450a0a !important; }
+  .dark .bg-green-50 { background-color: #14532d !important; }
+  .dark .bg-orange-50 { background-color: #431407 !important; }
+  .dark .bg-cyan-50 { background-color: #164e63 !important; }
+  .dark .bg-indigo-50 { background-color: #312e81 !important; }
+  .dark .bg-yellow-50 { background-color: #422006 !important; }
+  .dark .bg-pink-50 { background-color: #500724 !important; }
+  .dark .bg-teal-50 { background-color: #134e4a !important; }
+  .dark .bg-primary-50 { background-color: #1e3a5f !important; }
+  .dark .bg-success-50 { background-color: #14532d !important; }
+  .dark .bg-warning-50 { background-color: #451a03 !important; }
+  .dark .bg-danger-50 { background-color: #450a0a !important; }
+
+  /* Border colors for dark mode */
+  .dark .border-blue-200 { border-color: #1e40af !important; }
+  .dark .border-emerald-200 { border-color: #065f46 !important; }
+  .dark .border-amber-200 { border-color: #92400e !important; }
+  .dark .border-rose-200 { border-color: #9f1239 !important; }
+  .dark .border-red-200 { border-color: #991b1b !important; }
+  .dark .border-purple-200 { border-color: #6b21a8 !important; }
+  .dark .border-green-200 { border-color: #166534 !important; }
+  .dark .border-orange-200 { border-color: #9a3412 !important; }
+  .dark .border-cyan-200 { border-color: #0e7490 !important; }
+  .dark .border-indigo-200 { border-color: #4338ca !important; }
+  .dark .border-primary-200 { border-color: #1e40af !important; }
+
+  /* Sidebar dark mode */
+  .dark aside {
+    background-color: #0f172a !important;
+    border-color: #1e293b !important;
+  }
+  
+  /* Header dark mode */
+  .dark header {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+  }
+
+  /* Modal overlay */
+  .dark .bg-black\/50 {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+
+  /* Modal content */
+  .dark [role="dialog"],
+  .dark .modal-content {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+  }
+
+  /* Dropdown menus */
+  .dark .dropdown-menu,
+  .dark [data-radix-popper-content-wrapper] {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+  }
+
+  /* Alert boxes */
+  .dark .bg-red-50,
+  .dark .bg-green-50,
+  .dark .bg-yellow-50 {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+  }
+
+  /* Fix gradients in dark mode */
+  .dark .bg-gradient-to-br.from-emerald-50.to-teal-50,
+  .dark .bg-gradient-to-br.from-blue-50.to-indigo-50 {
+    background: linear-gradient(to bottom right, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9)) !important;
+  }
+
+  /* Card borders in dark mode */
+  .dark .rounded-2xl.border {
+    border-color: #334155 !important;
+  }
+
+  /* Fix chart backgrounds */
+  .dark .recharts-wrapper {
+    background-color: transparent !important;
+  }
+
+  /* Fix badge backgrounds */
+  .dark .bg-primary-100 { background-color: #1e3a5f !important; }
+  .dark .bg-emerald-100 { background-color: #134e4a !important; }
+  .dark .bg-amber-100 { background-color: #451a03 !important; }
+
+  /* Fix dashed borders */
+  .dark .border-dashed {
+    border-color: #475569 !important;
+  }
+
+  /* Hover states */
+  .dark .hover\:bg-gray-50:hover {
+    background-color: #334155 !important;
+  }
+
+  .dark .hover\:bg-gray-100:hover {
+    background-color: #475569 !important;
+  }
+
+  /* Table rows */
+  .dark .divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
+    border-color: #334155 !important;
+  }
+
+  .dark .divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+    border-color: #334155 !important;
+  }
+
+  .dark tbody tr:hover {
+    background-color: #334155 !important;
+  }
+
+  /* Scrollbar dark mode */
+  .dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background: #1e293b;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 4px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: #64748B;
+  }
+
+  /* ========== END DARK MODE STYLES ========== */
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: linear-gradient(135deg, #2563EB 0%, #0EA5E9 100%);
+  }
+  .gradient-card {
+    background: linear-gradient(to bottom right, #F9FAFB 0%, #EFF6FF 100%);
+  }
+  .gradient-success {
+    background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+  }
+}
