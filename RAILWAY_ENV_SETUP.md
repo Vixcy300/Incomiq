@@ -134,6 +134,22 @@ Once you deploy to Vercel, add this variable:
 
 ## 🛠️ Troubleshooting
 
+### "pip: command not found" or Build Fails
+This happens when Railway can't find Python. **Two solutions:**
+
+**Solution 1: Let Nixpacks Auto-Detect (Recommended)**
+- Your repo now has `nixpacks.toml` which configures the build
+- Railway should automatically use it
+- Just redeploy and it should work
+
+**Solution 2: Set Root Directory**
+1. Go to Railway → Your Service → **Settings**
+2. Find **"Root Directory"** 
+3. Set it to: `backend`
+4. Click **"Redeploy"** at the top
+
+This tells Railway to build from the backend folder where Python is.
+
 ### "Deployment Failed"
 - Check the **Deployments** logs for specific errors
 - Common issues:

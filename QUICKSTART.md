@@ -17,7 +17,11 @@
 1. Click **"New Project"**
 2. Select **"Deploy from GitHub repo"**
 3. Choose: **Vixcy300/Incomiq**
-4. Railway auto-detects Python and starts building
+4. Railway auto-detects Python using `nixpacks.toml` config
+
+**⚠️ If Build Fails with "pip: command not found":**
+- Go to **Settings** → Set **Root Directory** to `backend`
+- Click **"Redeploy"** at the top
 
 ### C. Add Environment Variables
 1. Click on your service/project card
