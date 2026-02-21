@@ -1,0 +1,1 @@
+ C:\\Users\\vigne\\OneDrive\\Desktop\\code-4-change-vscod\\mobile-native\\.dart_tool\\flutter_build\\94717189625046cdaeb329cd731f7a2c\\native_assets.json: 
